@@ -5,6 +5,8 @@ body{
 h1{
     font-family: 'Mali', cursive;
     font-size: 85px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 img{
   display: block;
@@ -13,4 +15,5 @@ img{
   width: 500px;
   height: auto;
   border-radius: 1.5%;
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.5), 0 12px 26px 0 rgba(0, 0, 0, 0.3);
 }
