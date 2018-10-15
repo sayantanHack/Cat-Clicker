@@ -1,0 +1,11 @@
+body{
+  background: #dce7b2;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+
+}
