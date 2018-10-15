@@ -1,4 +1,4 @@
-<h1 align="center"> Cat Clicker Game </h1>
+<h1 align="center"> Cat Clicker Game 🐱🐱</h1>
 
 This is a game of Cat Clicker . 
 
