@@ -18,7 +18,39 @@ p{
   font-size: 20px;
   font-family: 'Niramit', sans-serif;
 }
-img{
+
+.clicking i{
+  width: 300px;
+  height: auto;
+  font-size: 30px;
+  color: #3c0b8f;
+  font-family: 'Acme', cursive;
+  position: relative;
+  left: 100px;
+}
+
+.clicking .refresh{
+  display: block;
+  margin-bottom: 1px;
+  margin-right: 2px;
+  margin-left: auto;
+  position: relative;
+  float: right;
+  padding-right: 100px;
+}
+.clicking .refresh button {
+  width: 100px;
+  height: 40px;
+  background-color: #1B959E; /* Green */
+  border-radius: 10%;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+body img{
   display: block;
   margin-left: auto;
   margin-right: auto;
