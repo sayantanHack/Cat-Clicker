@@ -4,7 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #dedede;
-    color: #de8568;
+    color: #333;
+    background: #de8568;
     padding: 0;
     margin: 0;
 }
