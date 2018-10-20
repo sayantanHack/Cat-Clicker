@@ -1,61 +1,179 @@
-body{
-  background: #dce7b2;
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dedede;
+    color: #de8568;
+    padding: 0;
+    margin: 0;
+}
+h1, h2 {
+    text-align: center;
 }
 
-h1{
-    font-family: 'Mali', cursive;
-    font-size: 85px;
+h2.cat-name {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-family: 'Gaegu', cursive;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+}
+
+#app-body {
+    display: flex;
+    height: 100%;
+}
+
+.cat_list {
+    flex-basis: 20%;
+    background-color: #efefef;
+    height: 95vh;
+}
+
+.cat_list_item--selected {
+    background-color: #3240bd;
+    color: #fff;
+    font-weight: 600;
+}
+.cat_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cat_list_item{
+    font-family: 'Gaegu', cursive;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.cat_list_item:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+}
+
+.cat_list_item h2 {
+    font-family: 'Gaegu', cursive;
+}
+
+.cat-display {
+    flex-basis: 95vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cat-entry {
+    flex-basis: 50%;
+}
+
+.entry-body {
+    background: #ebebeb;
+    padding: 30px 15px 40px 15px;
+    -webkit-box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
+    -moz-box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
+    box-shadow: -1px 11px 36px -5px rgba(71,71,71,1);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.admin-header.display {
+    justify-content: space-between;
+}
+
+.admin-header h3 {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-bottom: none;
+    background: #bebebe;
+    font-size: 1.25rem;
+}
+
+.btn {
+    border: none;
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-p{
-  color: #3848ED;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  width: 600px;
-  font-size: 20px;
-  font-family: 'Niramit', sans-serif;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
 }
 
-.clicking i{
-  width: 300px;
-  height: auto;
-  font-size: 30px;
-  color: #3c0b8f;
-  font-family: 'Acme', cursive;
-  position: relative;
-  left: 100px;
+.admin-btn {
+    background:  #3240bd;
 }
 
-.clicking .refresh{
-  display: block;
-  margin-bottom: 1px;
-  margin-right: 2px;
-  margin-left: auto;
-  position: relative;
-  float: right;
-  padding-right: 100px;
-}
-.clicking .refresh button {
-  width: 100px;
-  height: 40px;
-  background-color: #1B959E; /* Green */
-  border-radius: 10%;
-   color: white;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
+.admin-btn:active {
+    background:  #838fff;
 }
 
-body img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  height: auto;
-  border-radius: 1.5%;
-  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.5), 0 12px 26px 0 rgba(0, 0, 0, 0.3);
+.admin-form {
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+.admin {
+    display: none;
+}
+
+.form-input {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.form-btns {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn {
+    background: red;
+}
+
+.submit-btn {
+    background: green;
+}
+
+
+label {
+    flex-basis: 30%;
+    font-size: 1.25rem;
+    padding-top: 5px;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    margin: 3px 0;
+    flex-basis: 70%;
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: #000;
+    color: #ebebeb;
+    text-align: center;
+    box-sizing: border-box;
+    height: 5vh;
+}
+
+footer p {
+    margin: 0;
+    line-height: 5vh;
 }
